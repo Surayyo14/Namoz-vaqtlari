@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(./img/masjid.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bg-card{
+    background-color: rgba(168, 230, 98, 0.103);
+    backdrop-filter: blur(5px);
+}
+.card{
+    width: 250px;
+    height: 320px;
+    background-color: #ffffff50;
+    backdrop-filter: blur(5px);
+    padding: 10px;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.card:hover{
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+.card-img{
+    transition: inherit;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.card:hover .card-img{
+transform: scale(0.9)
+}
+.card-time{
+    font-size: 50px;
+    font-weight: 600;
+}

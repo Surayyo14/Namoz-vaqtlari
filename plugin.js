@@ -1,0 +1,46 @@
+// "use strict";
+// // selector plugin
+// const $ = function (selector) {
+//   return document.querySelectorAll(selector);
+// };
+// const $a = function (selector) {
+//   return document.querySelectorAll(selector);
+// };
+
+// ///create element
+// const createElement = function (tagName, className, content) {
+//   const newElement = document.createElement(tagName);
+
+//   if (className) {
+//     newElement.classList.add(className);
+//   }
+//   if (content) {
+//     newElement.innerHTML = `${content}`;
+//   }
+
+//   return newElement;
+// };
+
+
+"use strict";
+// selector plugin
+const $ = function (selector) {
+  return document.querySelector(selector);
+};
+const $a = function (selector) {
+  return document.querySelectorAll(selector);
+};
+
+// create element function
+const createElement = function (tagName, className, content) {
+  const newElement = document.createElement(tagName);
+
+  if (className) {
+    newElement.classList.add(className);
+  }
+  if (content) {
+    newElement.innerHTML = `${content}`;
+  }
+
+  return newElement;
+};
